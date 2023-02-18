@@ -1,0 +1,275 @@
+:root {
+  --primary: #46425d;
+  --bg: #33303e;
+  --text: #c1b6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  background-size: 100%;
+  color: #fff;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(51, 48, 62, 0.2);
+  border-bottom: 1px thin var(--primary);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  backdrop-filter: blur(8px);
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container a {
+  color: var(--text);
+  transition: 0.5s;
+}
+
+.nav-container .logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.nav-container .logo img {
+  width: 30px;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.nav-container .home {
+  margin-left: auto !important;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.nav-container .home:hover {
+  transform: scale(1.05);
+}
+
+.nav-container .home .fa-home {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+/* Wrapper */
+.wrapper {
+  padding-top: 2rem !important;
+}
+
+/* Product */
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.octa-info {
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 1.3rem;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  font-family: 'Montserrat';
+}
+
+.octa-banner {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+.select-section_container {
+  border-radius: 1rem;
+  margin: 0 0 1rem;
+  background-clip: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.select-section_header {
+  font-family: 'Montserrat';
+  padding: 0.5rem 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.select-section_title {
+  color: var(--text);
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.select-section_body {
+  flex: 1 1 auto;
+  padding-top: 0;
+}
+
+/* Games Card */
+.games-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.list-games {
+  flex: 0 0 auto;
+  width: 50%;
+  max-width: 100%;
+}
+
+.card {
+  margin: 10px;
+  background-color: var(--primary);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  transition: 0.5s;
+}
+
+.games-list-items {
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.games-tile-link {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.games-tile-img {
+  width: 100%;
+  padding: 1.3rem 1.3rem 0.3rem;
+}
+
+.games-tile-title {
+  color: var(--text);
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 0.5rem 0.5rem 1rem;
+  max-width: 100%;
+  direction: ltr;
+}
+
+/* Footer */
+footer {
+  margin-top: 48px;
+  margin-bottom: 0px;
+  background-color: var(--primary);
+  color: var(--text);
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.credit {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.git {
+  color: #fff;
+}
+
+/* OK */
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+/* Media Queries */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .list-games {
+    width: 25%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .games-tile-title {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
