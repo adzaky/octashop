@@ -58,10 +58,7 @@ label {
 }
 
 input,
-button,
-select,
-optgroup,
-textarea {
+button {
   margin: 0;
   border-radius: 0.5rem;
   font-family: inherit;
@@ -74,8 +71,6 @@ textarea {
 .navbar {
   display: flex;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   background-color: rgba(51, 48, 62, 0.2);
   border-bottom: 1px thin var(--primary);
   position: fixed;
@@ -84,6 +79,8 @@ textarea {
   left: 0;
   z-index: 9999;
   backdrop-filter: blur(8px);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .navbar > .container {
@@ -91,38 +88,35 @@ textarea {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .nav-container a {
   color: var(--text);
+  text-align: center;
   transition: 0.5s;
 }
 
 .nav-container .logo {
   font-size: 1.3rem;
   font-weight: 900;
+  padding-top: 0.2rem;
 }
 
 .nav-container .logo img {
   width: 30px;
   vertical-align: middle;
   margin-right: 0.4rem;
-  padding-bottom: 0.2rem;
 }
 
 .nav-container .home {
-  margin-left: auto !important;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding-bottom: 0.2rem !important;
   font-weight: 700;
 }
 
 .nav-container .home:hover {
   transform: scale(1.05);
-}
-
-.nav-container .home .fa-home {
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
 }
 
 /* Wrapper */
@@ -376,9 +370,12 @@ footer {
 }
 
 /* . */
-
 .d-flex {
   display: flex !important;
+}
+
+.d-lg_none {
+  display: none !important;
 }
 
 .float-start {
@@ -524,8 +521,20 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .navbar > .container {
+    padding: 0 0.75rem !important;
+  }
+
   .container {
     max-width: 720px;
+  }
+
+  .d-lg_none {
+    display: inline-block !important;
+  }
+
+  .d-none {
+    display: none !important;
   }
 }
 
