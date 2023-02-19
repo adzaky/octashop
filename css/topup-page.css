@@ -66,6 +66,19 @@ button {
   line-height: inherit;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+}
+
 /* Navbar */
 
 .navbar {
