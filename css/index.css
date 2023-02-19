@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg);
   background-size: 100%;
@@ -279,10 +278,6 @@ footer {
     max-width: 720px;
   }
 
-  .list-games {
-    width: 25%;
-  }
-
   .d-lg_none {
     display: inline-block !important;
   }
@@ -295,6 +290,10 @@ footer {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .list-games {
+    width: 25%;
   }
 
   .games-tile-title {
