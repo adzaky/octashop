@@ -179,8 +179,9 @@ img {
 }
 
 .card:hover {
-  transform: scale(1.04);
-  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid var(--text);
+  box-shadow: 0 2px 8px #00000080;
 }
 
 .games-list-items {

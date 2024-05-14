@@ -493,7 +493,7 @@
     <footer>
       <div class="credit">
         <small
-          >Created by <a href="https://github.com/zkyzzz" class="link">adlimdzaky</a><a href="https://instagram.com/octagram.team" class="link"> | Octagram Company</a>. &copy;
+          >Created by <a href="#" class="link">Kelompok 2 Web-I</a>. &copy;
           2023.</small
         >
       </div>
@@ -503,7 +503,22 @@
     <!-- Script Start -->
     <script>
       function beli() {
-        alert('Toko Nya Belum Buka Ya Kak :)')
+        // Mengambil nilai dari form
+        var email = document.getElementById("email").value;
+        var uid = document.getElementById("uid").value;
+
+        // Memeriksa apakah form sudah terisi
+        if (email === "" || uid === "") {
+          alert("Mohon isi semua form terlebih dahulu");
+
+          // Scroll kembali ke form
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        } else {
+          alert("Toko Nya Belum Buka Ya Kak :)");
+        }
       }
     </script>
     <!-- Script End -->
